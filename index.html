@@ -524,29 +524,30 @@
             </li>
           </ul>
         </div>
-        <form class="footer-form" action="">
-          <div class="label-input">
-            <label for="email-for-subscribe" class="footer-mail">
+        <div class="footer-form-container">
+          <p class="footer-form-container-p">Subscribe</p>
+          <form class="footer-form">
+            <div class="label-input">
+              <label class="footer-mail">
+              <input
+                type="email"
+                name="subscribe-email"
+                class="email-input"
+                placeholder="   E-mail"
+              />  
+              </label>              
+            </div>
+            <button class="subscribe-btn" type="submit">
               Subscribe
-            </label>
-            <input
-              id="email-for-subscribe"
-              type="email"
-              name="subscribe-email"
-              class="email-input"
-              placeholder="   E-mail"
-            />
-          </div>
-          <button class="subscribe-btn" type="submit">
-            Subscribe
-            <svg width="24" height="20">
-              <use
-                class="icon-subscribe"
-                href="./images/icons.svg#icon-send"
-              ></use>
-            </svg>
-          </button>
-        </form>
+              <svg width="24" height="20">
+                <use
+                  class="icon-subscribe"
+                  href="./images/icons.svg#icon-send"
+                ></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="modal-overlay">
@@ -556,12 +557,19 @@
             <use class="icon-close" href="./images/icons.svg#close"></use>
           </svg>
         </button>
-        <form action="" class="modal-form">
-          <p class="modal-caption">Leave your contacts and we will call you back</p>
+        <form class="modal-form">
+          <p class="modal-caption">
+            Leave your contacts and we will call you back
+          </p>
           <div class="modal-field">
             <label for="user-name" class="modal-label">Name</label>
             <div class="input-wrap">
-              <input type="text" name="user-name" class="modal-input" id="user-name" />
+              <input
+                type="text"
+                name="user-name"
+                class="modal-input"
+                id="user-name"
+              />
               <svg class="modal-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-Vector"></use>
               </svg>
@@ -570,7 +578,12 @@
           <div class="modal-field">
             <label for="user-phone" class="modal-label">Phone</label>
             <div class="input-wrap">
-              <input type="tel" name="user-phone" class="modal-input" id="user-phone" />
+              <input
+                type="tel"
+                name="user-phone"
+                class="modal-input"
+                id="user-phone"
+              />
               <svg class="modal-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
               </svg>
@@ -579,7 +592,12 @@
           <div class="modal-field">
             <label for="user-email" class="modal-label">Email</label>
             <div class="input-wrap">
-              <input type="email" name="user-email" class="modal-input" id="user-email" />
+              <input
+                type="email"
+                name="user-email"
+                class="modal-input"
+                id="user-email"
+              />
               <svg class="modal-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
               </svg>
@@ -587,10 +605,21 @@
           </div>
           <div class="modal-field">
             <label for="user-comment" class="modal-label">Comment</label>
-            <textarea name="user-comment" id="user-comment" class="modal-textarea" placeholder="Text input"></textarea>
+            <textarea
+              name="user-comment"
+              id="user-comment"
+              class="modal-textarea"
+              placeholder="Text input"
+            ></textarea>
           </div>
           <div class="modal-field-checkbox">
-            <input type="checkbox" name="user-privacy" id="user-privacy" class="modal-checkbox visually-hidden" value="true" />
+            <input
+              type="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              class="modal-checkbox visually-hidden"
+              value="true"
+            />
             <label for="user-privacy" class="modal-checkbox-label">
               <span class="modal-checkbox-span">
                 <svg class="modal-checkbox-icon" width="10" height="8">
