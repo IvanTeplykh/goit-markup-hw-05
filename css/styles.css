@@ -654,6 +654,8 @@ footer p {
 .modal-checkbox-label {
   font-size: 12px;
   color: #8e8f99;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
 }
 
 .modal-checkbox-span {
